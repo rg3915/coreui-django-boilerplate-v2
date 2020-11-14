@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        Title
+        <span class="float-right">1 of 10 results (100 total)</span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-auto">
+            <a class="btn btn-primary" href="{% url 'core:create' %}">
+              <i class="fa fa-plus"></i>
+              Add
+            </a>
+          </div>
+          <div class="col">
+            <form action="." method="GET">
+              <div class="row">
+                <div class="col p-ari-5">
+                  <input name="search" class="form-control mb-2" type="text" placeholder="Search..." />
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-success mb-2" type="submit">OK</button>
+                  <button class="btn btn-link mb-2">Clear</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- TABLE -->
+        <table class="table table-responsive-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Date registered</th>
+              <th>Role</th>
+              <th class="text-center">Status</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chetan Mohamed</td>
+              <td>2012/01/01</td>
+              <td>Member</td>
+              <td class="text-center">
+                <span class="badge badge-success">Active</span>
+              </td>
+              <td class="text-center">
+                <a href="">
+                  <i class="fa fa-edit"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Derick Maximinus</td>
+              <td>2012/02/01</td>
+              <td>Staff</td>
+              <td class="text-center">
+                <span class="badge badge-danger">Banned</span>
+              </td>
+              <td class="text-center">
+                <a href="">
+                  <i class="fa fa-edit"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Estavan Lykos</td>
+              <td>2012/02/01</td>
+              <td>Admin</td>
+              <td class="text-center">
+                <span class="badge badge-secondary">Inactive</span>
+              </td>
+              <td class="text-center">
+                <a href="">
+                  <i class="fa fa-edit"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Friderik Dávid</td>
+              <td>2012/03/01</td>
+              <td>Member</td>
+              <td class="text-center">
+                <span class="badge badge-warning">Pending</span>
+              </td>
+              <td class="text-center">
+                <a href="">
+                  <i class="fa fa-edit"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Samppa Nori</td>
+              <td>2012/01/21</td>
+              <td>Staff</td>
+              <td class="text-center">
+                <span class="badge badge-success">Active</span>
+              </td>
+              <td class="text-center">
+                <a href="">
+                  <i class="fa fa-edit"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- pagination -->
+        {% include "includes/pagination.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

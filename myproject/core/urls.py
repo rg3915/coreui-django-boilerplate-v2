@@ -41,9 +41,13 @@ url_coreui = [
     path('widgets/', v.widgets, name='widgets'),
     path('404/', v.error404, name='error404'),
     path('500/', v.error500, name='error500'),
+    path('invoice/', v.invoice, name='invoice'),
 ]
+
 
 urlpatterns = [
     path('', v.index, name='index'),
+    path('list/', v._list, name='list'),
+    path('add/', v._create, name='create'),
     path('coreui/', include(url_coreui)),
 ]

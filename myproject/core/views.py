@@ -6,6 +6,16 @@ def index(request):
     return render(request, template_name)
 
 
+def _list(request):
+    template_name = '_list.html'
+    return render(request, template_name)
+
+
+def _create(request):
+    template_name = '_form.html'
+    return render(request, template_name)
+
+
 def breadcrumb(request):
     template_name = 'base/breadcrumb.html'
     return render(request, template_name)
@@ -178,4 +188,9 @@ def error404(request):
 
 def error500(request):
     template_name = '500.html'
+    return render(request, template_name)
+
+
+def invoice(request):
+    template_name = 'invoice.html'
     return render(request, template_name)
