@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        Title
+        <div class="btn-group float-right">
+          <button class="btn btn-setting dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="icon-settings"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <span class="pull-right btn btn-sm btn-primary mr-2">
+          <i class="fa fa-edit"></i> Edit
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <img src="https://randomuser.me/api/portraits/lego/5.jpg" width="200px">
+          </div>
+          <div class="col-6">
+            <h4>John Joe</h4>
+            <h4><small><span class="text-muted">Label:</span></small>
+              text
+            </h4>
+            <h4><small><span class="text-muted">Label:</span></small>
+              text
+            </h4>
+          </div>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <h4>Title</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <h4>Title</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+            <li class="list-group-item no-border"><span class="text-muted">Label:</span> Lorem ipsum</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <h4>Observation</h4>
+          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex, corrupti! Assumenda, distinctio quasi magnam delectus qui et illum reiciendis ea consequuntur mollitia? Mollitia in enim labore consectetur nostrum corrupti.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-header">
+        Contacts
+        <span class="pull-right badge badge-success i-is-link" data-toggle="modal" data-target="#mymodal"><i class="fa fa-plus"></i> Add</span>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item no-border">
+            <span class="badge badge-warning">type</span> 11 98765-4321
+            <span class="span-is-link pull-right" data-toggle="modal" data-target="#mymodal">
+              <i class="fa fa-edit" style="margin-left: 10px;"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Title
+        <span class="pull-right badge badge-success i-is-link" data-toggle="modal" data-target="#mymodal"><i class="fa fa-plus"></i> Add</span>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item no-border li-line pl-0 pr-0">
+                <span class="text-muted">Label:</span> <span class="lead">text</span>
+                <span class="span-is-link float-right" data-toggle="modal" data-target="#mymodal">
+                  <i class="fa fa-edit" style="margin-left: 10px;"></i>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-header">
+        Title
+        <span class="pull-right badge badge-success i-is-link" data-toggle="modal" data-target="#mymodal"><i class="fa fa-plus"></i> Add</span>
+      </div>
+      <div>
+        <!-- card-body -->
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item no-border li-line pl-0 pr-0">
+                <span class="lead">Name</span>
+                <span class="span-is-link pull-right" data-toggle="modal" data-target="#mymodal">
+                  <i class="fa fa-edit" style="margin-left: 10px;"></i>
+                </span>
+              </li>
+              <li class="list-group-item no-border li-line pl-0 pr-0"><span class="text-muted">Label:</span> text</li>
+              <li class="list-group-item no-border li-line pl-0 pr-0"><span class="text-muted">Label:</span> text</li>
+              <li class="list-group-item no-border li-line pl-0 pr-0"><span class="text-muted">Label:</span> text</li>
+              <li class="list-group-item no-border li-line pl-0 pr-0"><span class="text-muted">Label:</span>
+                <span class="badge badge-success">Yes</span>
+              </li>
+              <li class="list-group-item li-line pl-0 pr-0">
+                <span class="text-muted">Observation:</span>
+                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur alias cupiditate dicta blanditiis facilis rerum animi at unde, fugit. Aliquid quos, id illo autem praesentium. Amet reprehenderit rerum, veritatis.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        Title
+        <span class="pull-right badge badge-success i-is-link" data-toggle="modal" data-target="#mymodal">
+          <i class="fa fa-plus"></i> Add
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-responsive-sm table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Date registered</th>
+                  <th>Role</th>
+                  <th class="text-center">Status</th>
+                  <th class="text-center">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Chetan Mohamed
+                  </td>
+                  <td>2021/01/01</td>
+                  <td>Member</td>
+                  <td class="text-center">
+                    <span class="badge badge-success">Active</span>
+                  </td>
+                  <td class="text-center">
+                    <a href="">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Derick Maximinus
+                  </td>
+                  <td>2021/02/01</td>
+                  <td>Staff</td>
+                  <td class="text-center">
+                    <span class="badge badge-danger">Banned</span>
+                  </td>
+                  <td class="text-center">
+                    <a href="">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Estavan Lykos
+                  </td>
+                  <td>2021/02/01</td>
+                  <td>Admin</td>
+                  <td class="text-center">
+                    <span class="badge badge-secondary">Inactive</span>
+                  </td>
+                  <td class="text-center">
+                    <a href="">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Friderik Dávid
+                  </td>
+                  <td>2021/03/01</td>
+                  <td>Member</td>
+                  <td class="text-center">
+                    <span class="badge badge-warning">Pending</span>
+                  </td>
+                  <td class="text-center">
+                    <a href="">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Samppa Nori
+                  </td>
+                  <td>2021/01/21</td>
+                  <td>Staff</td>
+                  <td class="text-center">
+                    <span class="badge badge-success">Active</span>
+                  </td>
+                  <td class="text-center">
+                    <a href="">
+                      <i class="fa fa-edit"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+{% include "includes/modal.html" %}
+{% endblock content %}

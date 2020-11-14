@@ -27,6 +27,9 @@
   <!-- Main styles for this application-->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
   <link href="{% static 'css/pace.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <!-- select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   {% block css %}{% endblock css %}
 </head>
 <!-- BODY options, add following classes to body to change options
@@ -61,9 +64,9 @@
       {% include 'includes/breadcrumb.html' %}
       <div class="container-fluid">
         <div class="animated fadeIn">
-
           {% block content %}
-          <div class="row">  <!-- Insert the row -->
+          <div class="row">
+            <!-- Insert the row -->
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
@@ -77,7 +80,6 @@
             </div>
           </div>
           {% endblock content %}
-
         </div>
       </div>
     </main>
@@ -97,6 +99,7 @@
   <script src="{% static 'js/Chart.min.js' %}"></script>
   <script src="{% static 'js/custom-tooltips.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   {% block js %}{% endblock js %}
 </body>
 

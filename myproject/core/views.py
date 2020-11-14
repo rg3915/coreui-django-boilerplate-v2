@@ -11,6 +11,11 @@ def _list(request):
     return render(request, template_name)
 
 
+def _detail(request):
+    template_name = '_detail.html'
+    return render(request, template_name)
+
+
 def _create(request):
     template_name = '_form.html'
     return render(request, template_name)

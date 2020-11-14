@@ -48,6 +48,7 @@ url_coreui = [
 urlpatterns = [
     path('', v.index, name='index'),
     path('list/', v._list, name='list'),
+    path('detail/', v._detail, name='detail'),
     path('add/', v._create, name='create'),
     path('coreui/', include(url_coreui)),
 ]

@@ -1,0 +1,32 @@
+.select2-selection {
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  border: 1px solid #e4e7ea !important;
+}
+
+.span-is-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #20a8d8;
+}
+
+.i-is-link {
+  cursor: pointer;
+}
+
+.required:after {
+  content: ' *';
+  color: red;
+}
+
+span.required:after {
+  content: ' *';
+  color: red;
+}
+
+.ok {
+  color: green;
+}
+
+.no {
+  color: red;
+}
