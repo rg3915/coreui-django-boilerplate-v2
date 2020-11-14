@@ -9,7 +9,7 @@ This is the [CoreUI v2](https://coreui.io/demo/2.0/#main.html) template that can
 
 Contains:
 
-* contrib/env_gen.py
+* [contrib/env_gen.py](https://gist.github.com/rg3915/75eed74f3578ac0dde808b1194b0e486)
 * requirements.txt
 * [select2.js](https://select2.org/)
 
