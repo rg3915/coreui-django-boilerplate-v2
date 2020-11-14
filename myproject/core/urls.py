@@ -6,6 +6,7 @@ app_name = 'core'
 
 
 url_coreui = [
+    path('dashboard/', v.dashboard, name='dashboard'),
     path('breadcrumb/', v.breadcrumb, name='breadcrumb'),
     path('cards/', v.cards, name='cards'),
     path('carousel/', v.carousel, name='carousel'),

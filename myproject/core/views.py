@@ -21,6 +21,11 @@ def _create(request):
     return render(request, template_name)
 
 
+def dashboard(request):
+    template_name = 'dashboard.html'
+    return render(request, template_name)
+
+
 def breadcrumb(request):
     template_name = 'base/breadcrumb.html'
     return render(request, template_name)
