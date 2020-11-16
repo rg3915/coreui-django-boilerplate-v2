@@ -1,4 +1,4 @@
-# coreui-django-boilerplate-v2 (2021)
+# coreui-django-boilerplate-v2 (2020)
 
 This is the [CoreUI v2](https://coreui.io/demo/2.0/#main.html) template that can be used as a base template in Django.
 
