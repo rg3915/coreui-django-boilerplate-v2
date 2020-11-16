@@ -13,6 +13,9 @@ Contains:
 * requirements.txt
 * [select2.js](https://select2.org/)
 
+![dashboard](dashboard.png)
+
+
 ## This project was done with:
 
 * [Python 3.8.2](https://www.python.org/)
